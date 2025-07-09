@@ -1,10 +1,12 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 300; /* lightweight */
+  font-size: 1rem;
 }
 
 header h1 {
   font-weight: 600;
+  font-size: 2rem;
 }
 
 .sort-indicator {
@@ -14,4 +16,18 @@ header h1 {
 th.sortable {
   cursor: pointer;
   user-select: none;
+}
+
+footer {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 0.9rem; /* slightly smaller text on small screens */
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
 }
