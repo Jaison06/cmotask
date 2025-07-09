@@ -6,3 +6,12 @@ body {
 header h1 {
   font-weight: 600;
 }
+
+.sort-indicator {
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+th.sortable {
+  cursor: pointer;
+  user-select: none;
+}

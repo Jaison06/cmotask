@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const rowsPerPage = 20;
+  const rowsPerPage = 25;
   let currentPage = 1;
   let todos = [];
   let filteredTodos = [];
@@ -34,7 +34,11 @@ $(document).ready(function () {
       const indicator = $(this).find(".sort-indicator");
 
       if (field === sortField) {
-        indicator.html(sortAsc ? "↑" : "↓");
+        indicator.html(
+          sortAsc
+            ? '<i class="bi bi-arrow-up"></i>'
+            : '<i class="bi bi-arrow-down"></i>'
+        );
       } else {
         indicator.html("");
       }
